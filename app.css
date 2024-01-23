@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: aliceblue;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("img/background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+.box {
+  margin: 30px 0;
+  position: relative;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+input:focus~label,
+.input:valid~label {
+  top: -3px;
+}
+.box input {
+  
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.fi {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  top:20px;
+}
+.forget {
+  display: flex;
+  gap: 1.5rem;
+  margin: 15px 0 15px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+}
+a:hover {
+  border-bottom: 1px solid rgb(216, 236, 253);
+  color: rgb(202, 228, 251);
+  transition: all 300ms ease;
+}
+button {
+  display: block;
+  background-color: aliceblue;
+  border: white;
+  border-radius: 1.3rem;
+  width: 100%;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+.btn {
+  margin-bottom: 3rem;
+}
